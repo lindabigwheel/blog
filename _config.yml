@@ -1,0 +1,77 @@
+# 代码高亮，需要安装rdiscount
+markdown: rdiscount
+pygments: true
+
+# https://github.com/sidong/Powerful-CMS/Permalinks
+# 文章结构 /分类/标题
+permalink:   /:categories/:title/
+url: http://Sidong.github.io/Powerful-CMS
+# 部署在Git上的repo名字
+baseurl: /Powerful-CMS
+# 名字
+author: Sidong
+# 邮箱
+gmail: 'sidongh@gmail.com'
+# 个人logo文件路径
+logo: /assets/images/logo.jpg
+# 站点开始时间
+date: 2014-01-01
+
+# 个人信息，用于footer
+# contain:github, gmail, twitter, sina; lack:gplus
+contacts:
+  - type: github
+    icon: fa-github
+    url: 'https://github.com/Sidong'
+  - type: gmail
+    icon: fa-pencil
+    url: 'mailto:sidongh@gmail.com'
+  - type: twitter
+    icon: fa-twitter
+    url: 'https://twitter.com/stone_style'
+  - type: sina
+    icon: fa-weibo
+    url: 'http://weibo.com/u/1879863147?s=6uyXnP'
+
+# 链接，用于导航菜单
+# 包含 about（关于）/articles（文章归档）/tags（标签分类）/feed（feed源）/search（搜索功能）
+links:
+  - title: About
+    url: /about
+    icon: fa-anchor
+    link: normal
+  - title: Articles
+    url: /
+    icon: fa-bookmark
+    link: normal
+  - title: tags
+    url: /tags
+    icon: fa-tags
+    link: normal
+  - title: Feed
+    url: /feed.xml
+    icon: fa-rss-square
+    normalLink: false
+    link: feed
+  - title: Search
+    icon: fa-search
+    normalLink: false
+    link: search
+
+safe: false
+# Blog标题
+title: Sidong
+# Blog描述
+description: Sidong's Powerful CMS
+
+# 开启搜索功能
+search: true
+
+# 开启图片预览功能，未实现，设置为false
+imgPreview: false
+
+# 多说评论
+comments: false
+
+# 时间显示
+showTime: true
