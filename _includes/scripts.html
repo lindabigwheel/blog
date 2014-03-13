@@ -12,7 +12,7 @@
     // 搜索输入框元素
     searchInput: document.querySelector(".search-field"),
     // 数据库文件路径
-    jsonFile: '/search.json',
+    jsonFile: '{{ site.baseurl }}/search.json',
     // 替换模板{xx}
     template: "<li><article><a href='{url}'><i class='fa fa-share'></i> {title}<span class='entry-date'><time datetime='{date}'>{date}</time></span></a></article></li>",
     // 搜索结果元素
@@ -124,9 +124,6 @@
   console.log(timeSpan);
   function setTimeSpan(){
     var date = new Date();
-    console.log(date.toLocaleString());
-    console.log(timeSpan.innerText);
-    console.log(timeSpan.innerHTML);
     timeSpan.innerHTML = date.format('MM-dd hh:mm:ss');
     // timeSpan.innerHTML = date.format('yyyy-MM-dd hh:mm:ss');
     // timeSpan.innerText = date.toLocaleString();
