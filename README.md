@@ -29,9 +29,9 @@
 ---
 <h2 id="id-first">截图</h2>
 先放几个截图看一看   
-![]({{site.baseurl}}/assets/images/CMS/home.png)  
-![]({{site.baseurl}}/assets/images/CMS/rwd-lg-2.png)  
-![]({{site.baseurl}}/assets/images/CMS/rwd-sm-3.png)  
+![](http://Sidong.github.io/blog/assets/images/CMS/home.png)  
+![](http://Sidong.github.io/blog/assets/images/CMS/rwd-lg-2.png)  
+![](http://Sidong.github.io/blog/assets/images/CMS/rwd-sm-3.png)  
 
 ---
 <h2 id="id-0">版本</h2>
@@ -56,10 +56,13 @@ Blog，也称之为CMS(Content Management System)，内容管理系统，Blog常
 使用这个主题，快速搭建你的blog。  
 
 **Git复制**   
-> git clone git@github.com:Sidong/Powerful-CMS.git
+
+```
+git clone git@github.com:Sidong/Powerful-CMS.git
+```
 
 **替换个人信息**   
-{% highlight yaml %}
+```yaml
 # 代码高亮，需要安装rdiscount
 markdown: rdiscount
 pygments: true
@@ -137,7 +140,7 @@ comments: false
 
 # 时间显示
 showTime: true
-{% endhighlight %}
+```
 
 **目录树**   
 将文件夹 `_post` 替换为你的 `_post`，注意图片文件夹路径为 `assets/imgages/`
@@ -201,7 +204,7 @@ showTime: true
 > jekyll serve --baseurl '' --watch --port 4000 &   
 
 **http://0.0.0.0:4000/**   
-![]({{site.baseurl}}/assets/images/CMS/home.png)  
+![](http://Sidong.github.io/blog/assets/images/CMS/home.png)  
 
 ---
 <h2 id="id-3">特性</h2>
@@ -225,15 +228,15 @@ showTime: true
 ---
 <h2 id="id-4">响应式设计</h2>
 **大**  
-![]({{site.baseurl}}/assets/images/CMS/rwd-lg-1.png)  
-![]({{site.baseurl}}/assets/images/CMS/rwd-lg-2.png)  
+![](http://Sidong.github.io/blog/assets/images/CMS/rwd-lg-1.png)  
+![](http://Sidong.github.io/blog/assets/images/CMS/rwd-lg-2.png)  
 **中**
-![]({{site.baseurl}}/assets/images/CMS/rwd-mid.png)  
+![](http://Sidong.github.io/blog/assets/images/CMS/rwd-mid.png)  
 **小**
-![]({{site.baseurl}}/assets/images/CMS/rwd-sm-1.png)  
-![]({{site.baseurl}}/assets/images/CMS/rwd-sm-2.png)  
-![]({{site.baseurl}}/assets/images/CMS/rwd-sm-3.png)  
-![]({{site.baseurl}}/assets/images/CMS/rwd-sm-4.png)  
+![](http://Sidong.github.io/blog/assets/images/CMS/rwd-sm-1.png)  
+![](http://Sidong.github.io/blog/assets/images/CMS/rwd-sm-2.png)  
+![](http://Sidong.github.io/blog/assets/images/CMS/rwd-sm-3.png)  
+![](http://Sidong.github.io/blog/assets/images/CMS/rwd-sm-4.png)  
 
 ---
 <h2 id="id-5">快捷键</h2>
@@ -294,27 +297,27 @@ window.JekyllSearch.init(
 <h2 id="id-8">说好的追求细节</h2>
 **@one**   
 每次进入搜索界面，都会自动对焦文本输入框，并且文本输入框文本自动全选，方便下一次搜索。   
-![]({{site.baseurl}}/assets/images/CMS/tip-1.png)  
+![](http://Sidong.github.io/blog/assets/images/CMS/tip-1.png)  
 
 **@two**   
 在按下方向键 `↑` 和 `↓` 选择结果时，屏蔽方向键默认移动文本光标，但是 `←` `→` 可以控制文本光标移动。  
-![]({{site.baseurl}}/assets/images/CMS/tip-2.png)  
+![](http://Sidong.github.io/blog/assets/images/CMS/tip-2.png)  
 
 **@three**   
 退出搜索后，再次进入搜索状态保持着。   
-![]({{site.baseurl}}/assets/images/CMS/tip-3.png)  
+![](http://Sidong.github.io/blog/assets/images/CMS/tip-3.png)  
 
 **@four**   
 所有的快捷键均有实体按钮支持。   
-![]({{site.baseurl}}/assets/images/CMS/btn-1.png)  
-![]({{site.baseurl}}/assets/images/CMS/btn-2.png)  
-![]({{site.baseurl}}/assets/images/CMS/btn-3.png)  
+![](http://Sidong.github.io/blog/assets/images/CMS/btn-1.png)  
+![](http://Sidong.github.io/blog/assets/images/CMS/btn-2.png)  
+![](http://Sidong.github.io/blog/assets/images/CMS/btn-3.png)  
 
 **@five**   
 每一篇文章都在右上角给出描述、日期、标签、作者。  
 并且支持多标签支持，点击标签前往标签分类。如本文：   
-![]({{site.baseurl}}/assets/images/CMS/tag-1.png)  
-![]({{site.baseurl}}/assets/images/CMS/tag-2.png)
+![](http://Sidong.github.io/blog/assets/images/CMS/tag-1.png)  
+![](http://Sidong.github.io/blog/assets/images/CMS/tag-2.png)
 :( ~~标签排序~~    
 
 ---
