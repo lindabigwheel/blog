@@ -2,43 +2,40 @@
 
 ## 目录
 
-* [截图](#id-first)   
-* [版本](#id-0)
-* [无聊的比喻](#id-1)  
-* [安装使用](#id-2)  
+* 截图   
+* 版本
+* 无聊的比喻
+* 安装使用
 	* Git复制   
 	* 替换个人信息   
 	* 目录树   
 	* 本地运行   
 	* http://0.0.0.0:4000/   
-* [特性](#id-3)  
-* [响应式设计](#id-4)  
-* [快捷键](#id-5)  
-* [强大的搜索](#id-6)  
+* 特性  
+* 响应式设计  
+* 快捷键
+* 强大的搜索
 	* 开启
 	* 搜索设置
 	* 模糊匹配
 	* 快速跳转
 	* ~~拼音搜索~~
 	* ~~`Tag` 排序~~
-* [图片预览/异步加载](#id-7)   
-* [说好的追求细节](#id-8)  
-* [别人的东西](#id-9)  
-* [To-do-list](#id-10)  
+* 图片预览/异步加载
+* 说好的细节
+* 别人的东西
+* To-do-list
 
----
-<h2 id="id-first">截图</h2>
+## 截图
 先放几个截图看一看   
 ![](http://Sidong.github.io/blog/assets/images/CMS/home.png)  
 ![](http://Sidong.github.io/blog/assets/images/CMS/rwd-lg-2.png)  
 ![](http://Sidong.github.io/blog/assets/images/CMS/rwd-sm-3.png)  
 
----
-<h2 id="id-0">版本</h2>
+## 版本
 目前为 V1.0
 
----
-<h2 id="id-1">无聊的比喻</h2>
+## 无聊的比喻
 这是一个基于 `jekyll` 开发的 `Personal blog/CMS`。   
 Blog，也称之为CMS(Content Management System)，内容管理系统，Blog常作为我们记录 *学习*/*生活* 的收藏夹，可以比喻为一个储物柜。   
 一个比较好用的 *静态*“储物柜”，要满足以下基本功能：   
@@ -51,8 +48,7 @@ Blog，也称之为CMS(Content Management System)，内容管理系统，Blog常
 * `定制` # 既然是属于个人物品，当然要可定制呀，不然谁买你家储物柜。我们需要在储物柜刻上个人信息，需要不一样的分类方法，需要符合个人的搜索方法（模糊匹配、基于标题、标签搜索...）...   
 * `...` # 还有很多很多
 
----
-<h2 id="id-2">安装使用</h2>
+## 安装使用
 使用这个主题，快速搭建你的blog。  
 
 **Git复制**   
@@ -61,7 +57,8 @@ Blog，也称之为CMS(Content Management System)，内容管理系统，Blog常
 git clone git@github.com:Sidong/Powerful-CMS.git
 ```
 
-**替换个人信息**   
+**替换个人信息**  
+
 ```yaml
 # 代码高亮，需要安装rdiscount
 markdown: rdiscount
@@ -201,13 +198,15 @@ showTime: true
 
 **本地运行**   
 注意在本地运行，将 `site.baseurl` 设置为空，`&` 为在后台运行，不中断终端使用，使用linux `jobs` 目录管理后台   
-> jekyll serve --baseurl '' --watch --port 4000 &   
+
+```
+jekyll serve --baseurl '' --watch --port 4000 &   
+```
 
 **http://0.0.0.0:4000/**   
 ![](http://Sidong.github.io/blog/assets/images/CMS/home.png)  
 
----
-<h2 id="id-3">特性</h2>
+## 特性
 设计这个主题，（部分）实现以下特征：   
 
 * 响应式设计（欢迎帮助测试）   
@@ -225,8 +224,7 @@ showTime: true
 * 修改配置文件快速替换成你的blog   
 * 代码高亮  
 
----
-<h2 id="id-4">响应式设计</h2>
+## 响应式设计
 **大**  
 ![](http://Sidong.github.io/blog/assets/images/CMS/rwd-lg-1.png)  
 ![](http://Sidong.github.io/blog/assets/images/CMS/rwd-lg-2.png)  
@@ -238,19 +236,21 @@ showTime: true
 ![](http://Sidong.github.io/blog/assets/images/CMS/rwd-sm-3.png)  
 ![](http://Sidong.github.io/blog/assets/images/CMS/rwd-sm-4.png)  
 
----
-<h2 id="id-5">快捷键</h2>
+## 快捷键
 在当前页面试试按下 `.` 呼出菜单，按下 `,` 呼出搜索。当然菜单和搜索页提供鼠标点击呼出。点击左上角呼出菜单，点击菜单 <i class='fa fa-search fa-lg'></i> `search` 项目呼出搜索。点击 <i class='fa fa-times fa-lg'></i> 关闭对应的菜单/搜索界面。在搜索界面，按下 `ESC` 关闭搜索界面。   
 
----
-<h2 id="id-6">强大的搜索</h2>
+## 强大的搜索
 **开启**   
 首先记得在 `_config.yml` 开启搜索功能   
-> search: true   
+
+```
+search: true   
+```
 
 **搜索设置**   
 在文件 `scripts.html` 进行搜索设置   
-{% highlight js %}
+
+```js
 window.JekyllSearch.init(
 { 
   // 搜索输入框元素
@@ -272,7 +272,7 @@ window.JekyllSearch.init(
   // 搜索要匹配项目，与search.json对应，这里只搜索标题和日期
   matchItems: {'title':true,'category':false,'date':true}
 });
-{% endhighlight %}
+```
 
 **模糊匹配**   
 
@@ -289,12 +289,10 @@ window.JekyllSearch.init(
 **~~`Tag` 排序~~**   
 :( 搜索结果按 `Tag` 排序，还没实现！  
 
----
-<h2 id="id-7">图片预览/异步加载</h2>
+## 图片预览/异步加载
 :( 还没想好怎么实现！   
 
----
-<h2 id="id-8">说好的追求细节</h2>
+## 说好的细节
 **@one**   
 每次进入搜索界面，都会自动对焦文本输入框，并且文本输入框文本自动全选，方便下一次搜索。   
 ![](http://Sidong.github.io/blog/assets/images/CMS/tip-1.png)  
@@ -320,17 +318,14 @@ window.JekyllSearch.init(
 ![](http://Sidong.github.io/blog/assets/images/CMS/tag-2.png)
 :( ~~标签排序~~    
 
----
-<h2 id="id-9">别人的东西¶</h2>
+## 别人的东西
 借鉴了，感谢!
 
 * [FontAsesome](http://fortawesome.github.io/Font-Awesome/)   
 * [Simple-Jekyll-Search](https://github.com/christian-fei/Simple-Jekyll-Search)  
 * [typo.css](http://typo.sofish.de/)  
 
-
----
-<h2 id="id-10">To-do-list</h2>
+## To-do-list
 
 * 完成<a href="#id-3">特性</a>未完成的任务。   
 * 重构css文件。  
