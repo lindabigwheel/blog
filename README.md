@@ -66,43 +66,43 @@
 	# 个人信息，用于footer
 	# contain:github, gmail, twitter, sina; lack:gplus
 	contacts:
-		- type: github
-			icon: fa-github
-			url: 'https://github.com/Sidong'
-		- type: gmail
-			icon: fa-pencil
-			url: 'mailto:sidongh@gmail.com'
-		- type: twitter
-			icon: fa-twitter
-			url: 'https://twitter.com/stone_style'
-		- type: sina
-			icon: fa-weibo
-			url: 'http://weibo.com/u/1879863147?s=6uyXnP'
+	  - type: github
+	    icon: fa-github
+	    url: 'https://github.com/Sidong'
+	  - type: gmail
+	    icon: fa-pencil
+	    url: 'mailto:sidongh@gmail.com'
+	  - type: twitter
+	    icon: fa-twitter
+	    url: 'https://twitter.com/stone_style'
+	  - type: sina
+	    icon: fa-weibo
+	    url: 'http://weibo.com/u/1879863147?s=6uyXnP'
 
 	# 链接，用于导航菜单
 	# 包含 about（关于）/articles（文章归档）/tags（标签分类）/feed（feed源）/search（搜索功能）
 	links:
-		- title: About
-			url: /about
-			icon: fa-anchor
-			link: normal
-		- title: Articles
-			url: /
-			icon: fa-bookmark
-			link: normal
-		- title: tags
-			url: /tags
-			icon: fa-tags
-			link: normal
-		- title: Feed
-			url: /feed.xml
-			icon: fa-rss-square
-			normalLink: false
-			link: feed
-		- title: Search
-			icon: fa-search
-			normalLink: false
-			link: search
+	  - title: About
+	    url: /about
+	    icon: fa-anchor
+	    link: normal
+	  - title: Articles
+	    url: /
+	    icon: fa-bookmark
+	    link: normal
+	  - title: tags
+	    url: /tags
+	    icon: fa-tags
+	    link: normal
+	  - title: Feed
+	    url: /feed.xml
+	    icon: fa-rss-square
+	    normalLink: false
+	    link: feed
+	  - title: Search
+	    icon: fa-search
+	    normalLink: false
+	    link: search
 
 	safe: false
 	# Blog标题
@@ -229,24 +229,24 @@
 
 	window.JekyllSearch.init(
 	{ 
-		// 搜索输入框元素
-		searchInput: document.querySelector(".search-field"),
-		// 数据库文件路径
-		jsonFile: '/search.json',
-		// 替换模板{xx}
-		template: "<li><article><a href='{url}'><i class='fa fa-share'></i> {title}<span class='entry-date'><time datetime='{date}'>{date}</time></span></a></article></li>",
-		// 搜索结果元素
-		searchResults: document.querySelector(".search-results"),
-		// 搜索结果标题
-		searchResultsHeader: "<h4>Search results</h4>",
-		// 搜索项目数量
-		limit: 12,
-		// 模糊匹配
-		fuzzy: true,
-		// 无搜索结果提示
-		noResults: "<p>Nothing matched your query</p>",
-		// 搜索要匹配项目，与search.json对应，这里只搜索标题和日期
-		matchItems: {'title':true,'category':false,'date':true}
+	  // 搜索输入框元素
+	  searchInput: document.querySelector(".search-field"),
+	  // 数据库文件路径
+	  jsonFile: '/search.json',
+	  // 替换模板{xx}
+	  template: "<li><article><a href='{url}'><i class='fa fa-share'></i> {title}<span class='entry-date'><time datetime='{date}'>{date}</time></span></a></article></li>",
+	  // 搜索结果元素
+	  searchResults: document.querySelector(".search-results"),
+	  // 搜索结果标题
+	  searchResultsHeader: "<h4>Search results</h4>",
+	  // 搜索项目数量
+	  limit: 12,
+	  // 模糊匹配
+	  fuzzy: true,
+	  // 无搜索结果提示
+	  noResults: "<p>Nothing matched your query</p>",
+	  // 搜索要匹配项目，与search.json对应，这里只搜索标题和日期
+	  matchItems: {'title':true,'category':false,'date':true}
 	});
 
 **模糊匹配**   
