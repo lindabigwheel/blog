@@ -35,173 +35,152 @@
 ## 版本
 目前为 V1.0
 
-## 无聊的比喻
-这是一个基于 `jekyll` 开发的 `Personal blog/CMS`。   
-Blog，也称之为CMS(Content Management System)，内容管理系统，Blog常作为我们记录 *学习*/*生活* 的收藏夹，可以比喻为一个储物柜。   
-一个比较好用的 *静态*“储物柜”，要满足以下基本功能：   
-
-*	`分类` # 为所有扔进去的物品分类、打标签，这是外套、那是内衣，这是技术总结、那是日记，这应该打上Git标签、那应该有个Web标签，诸如此类。
-* `快速搜索` # 起晚了，匆匆忙忙翻找储物柜，找了半天没找着袜子，都放哪去了？一个良好整理的储物柜，应该具备快速搜索功能，即便是静态的 `jekyll`，也有办法通过 `liquid` 模板在前期生成一个简易使用的小数据库，以提供搜索功能。
-* `快速取出` # 找了半天终于找到你的袜子，你发现怎么也拉也拉不出来，袜子被什么东西勾住了，你不得不把其他物品一个一个往外边清，最后再把袜子拿出来，多麻烦。同样地，你要点击归档，移动你的鼠标，准确定位，再单击打开你要的页面，这太麻烦了。我们需要一种 `快速跳转` 至搜索结果页面的功能。   
-* `自适应` # 什么意思？储物柜还有自适应的？是的，你没有听错，别忘了除了你，还有其他人也要使用储物柜，他们有小孩子（手机），大孩子（pad），大人（PC），什么？还有老人（...我也不知道拿什么来比喻）。为小孩子服务时，储物柜不能太高、要易于使用，为大孩子服务时，他们够得着，不需要太矮，为大人服务时，想办法满足他们吧。所以，你想要有一个 `响应式` 储物柜。   
-* `简洁` # 简洁的外表是你低端的宣扬，它要能符合你的审美观。     
-* `定制` # 既然是属于个人物品，当然要可定制呀，不然谁买你家储物柜。我们需要在储物柜刻上个人信息，需要不一样的分类方法，需要符合个人的搜索方法（模糊匹配、基于标题、标签搜索...）...   
-* `...` # 还有很多很多
-
 ## 安装使用
 使用这个主题，快速搭建你的blog。  
 
 **Git复制**   
 
-```
-git clone git@github.com:Sidong/Powerful-CMS.git
-```
+  git clone git@github.com:Sidong/Powerful-CMS.git
 
 **替换个人信息**  
 
-```yaml
-# 代码高亮，需要安装rdiscount
-markdown: rdiscount
-pygments: true
+  # 代码高亮，需要安装rdiscount
+  markdown: rdiscount
+  pygments: true
 
-# https://github.com/sidong/Powerful-CMS/Permalinks
-# 文章结构 /分类/标题
-permalink:   /:categories/:title/
-url: http://Sidong.github.io/Powerful-CMS
-# 部署在Git上的repo名字
-baseurl: /Powerful-CMS
-# 名字
-author: Sidong
-# 邮箱
-gmail: 'sidongh@gmail.com'
-# 个人logo文件路径
-logo: /assets/images/logo.jpg
-# 站点开始时间
-time: 2014-01-01
+  # https://github.com/sidong/Powerful-CMS/Permalinks
+  # 文章结构 /分类/标题
+  permalink:   /:categories/:title/
+  url: http://Sidong.github.io/Powerful-CMS
+  # 部署在Git上的repo名字
+  baseurl: /Powerful-CMS
+  # 名字
+  author: Sidong
+  # 邮箱
+  gmail: 'sidongh@gmail.com'
+  # 个人logo文件路径
+  logo: /assets/images/logo.jpg
+  # 站点开始时间
+  time: 2014-01-01
 
-# 个人信息，用于footer
-# contain:github, gmail, twitter, sina; lack:gplus
-contacts:
-  - type: github
-    icon: fa-github
-    url: 'https://github.com/Sidong'
-  - type: gmail
-    icon: fa-pencil
-    url: 'mailto:sidongh@gmail.com'
-  - type: twitter
-    icon: fa-twitter
-    url: 'https://twitter.com/stone_style'
-  - type: sina
-    icon: fa-weibo
-    url: 'http://weibo.com/u/1879863147?s=6uyXnP'
+  # 个人信息，用于footer
+  # contain:github, gmail, twitter, sina; lack:gplus
+  contacts:
+    - type: github
+      icon: fa-github
+      url: 'https://github.com/Sidong'
+    - type: gmail
+      icon: fa-pencil
+      url: 'mailto:sidongh@gmail.com'
+    - type: twitter
+      icon: fa-twitter
+      url: 'https://twitter.com/stone_style'
+    - type: sina
+      icon: fa-weibo
+      url: 'http://weibo.com/u/1879863147?s=6uyXnP'
 
-# 链接，用于导航菜单
-# 包含 about（关于）/articles（文章归档）/tags（标签分类）/feed（feed源）/search（搜索功能）
-links:
-  - title: About
-    url: /about
-    icon: fa-anchor
-    link: normal
-  - title: Articles
-    url: /
-    icon: fa-bookmark
-    link: normal
-  - title: tags
-    url: /tags
-    icon: fa-tags
-    link: normal
-  - title: Feed
-    url: /feed.xml
-    icon: fa-rss-square
-    normalLink: false
-    link: feed
-  - title: Search
-    icon: fa-search
-    normalLink: false
-    link: search
+  # 链接，用于导航菜单
+  # 包含 about（关于）/articles（文章归档）/tags（标签分类）/feed（feed源）/search（搜索功能）
+  links:
+    - title: About
+      url: /about
+      icon: fa-anchor
+      link: normal
+    - title: Articles
+      url: /
+      icon: fa-bookmark
+      link: normal
+    - title: tags
+      url: /tags
+      icon: fa-tags
+      link: normal
+    - title: Feed
+      url: /feed.xml
+      icon: fa-rss-square
+      normalLink: false
+      link: feed
+    - title: Search
+      icon: fa-search
+      normalLink: false
+      link: search
 
-safe: false
-# Blog标题
-title: Sidong
-# Blog描述
-description: Sidong's Powerful CMS
+  safe: false
+  # Blog标题
+  title: Sidong
+  # Blog描述
+  description: Sidong's Powerful CMS
 
-# 开启搜索功能
-search: true
+  # 开启搜索功能
+  search: true
 
-# 开启图片预览功能，未实现，设置为false
-imgPreview: false
+  # 开启图片预览功能，未实现，设置为false
+  imgPreview: false
 
-# 多说评论
-comments: false
+  # 多说评论
+  comments: false
 
-# 时间显示
-showTime: true
-```
+  # 时间显示
+  showTime: true
 
 **目录树**   
 将文件夹 `_post` 替换为你的 `_post`，注意图片文件夹路径为 `assets/imgages/`
 
-```
-.
-├── 404.html  // 404页面
-├── README.md
-├── _config.yml  // 配置文件
-├── _drafts  // 草稿
-├── _includes  // 构成完整页面的页面元素
-│   ├── browser-upgrade.html
-│   ├── disqus_comments.html
-│   ├── footer.html
-│   ├── head.html
-│   ├── imgPreview.html
-│   ├── navigation.html
-│   ├── scripts.html
-│   └── search.html
-├── _layouts  // 模板，其中post文章用post.html模板，其他用page.html模板
-│   ├── page.html
-│   └── post.html
-├── _posts  // 个人文章
-│   ├── 2014-01-01-about.md
-│   └── ...
-├── _site
-├── assets
-│   ├── css  // css文件
-│   │   ├── font-awesome.css
-│   │   ├── highlight.css
-│   │   ├── main.css
-│   │   ├── normalize.css
-│   │   └── typo.css
-│   ├── fonts  // FontAwesome字体文件
-│   │   ├── FontAwesome.otf
-│   │   ├── fontawesome-webfont.eot
-│   │   ├── fontawesome-webfont.svg
-│   │   ├── fontawesome-webfont.ttf
-│   │   └── fontawesome-webfont.woff
-│   ├── images  // 图片目录
-│   │   └── logo.jpg  // 个人logo
-│   └── js  // js文件
-│       ├── jekyll-search.js
-│       ├── main.js
-│       ├── pinyin.js
-│       ├── plugins.js
-│       ├── util.js
-│       └── vendor
-│           ├── jquery-1.11.0.min.js
-│           └── modernizr-2.7.1.min.js
-├── crossdomain.xml
-├── favicon.ico
-├── feed.xml
-├── index.html  // 首页
-├── search.json  // post数据库
-└── tag.html  // tag页面
-```
+  .
+  ├── 404.html  // 404页面
+  ├── README.md
+  ├── _config.yml  // 配置文件
+  ├── _drafts  // 草稿
+  ├── _includes  // 构成完整页面的页面元素
+  │   ├── browser-upgrade.html
+  │   ├── disqus_comments.html
+  │   ├── footer.html
+  │   ├── head.html
+  │   ├── imgPreview.html
+  │   ├── navigation.html
+  │   ├── scripts.html
+  │   └── search.html
+  ├── _layouts  // 模板，其中post文章用post.html模板，其他用page.html模板
+  │   ├── page.html
+  │   └── post.html
+  ├── _posts  // 个人文章
+  │   ├── 2014-01-01-about.md
+  │   └── ...
+  ├── _site
+  ├── assets
+  │   ├── css  // css文件
+  │   │   ├── font-awesome.css
+  │   │   ├── highlight.css
+  │   │   ├── main.css
+  │   │   ├── normalize.css
+  │   │   └── typo.css
+  │   ├── fonts  // FontAwesome字体文件
+  │   │   ├── FontAwesome.otf
+  │   │   ├── fontawesome-webfont.eot
+  │   │   ├── fontawesome-webfont.svg
+  │   │   ├── fontawesome-webfont.ttf
+  │   │   └── fontawesome-webfont.woff
+  │   ├── images  // 图片目录
+  │   │   └── logo.jpg  // 个人logo
+  │   └── js  // js文件
+  │       ├── jekyll-search.js
+  │       ├── main.js
+  │       ├── pinyin.js
+  │       ├── plugins.js
+  │       ├── util.js
+  │       └── vendor
+  │           ├── jquery-1.11.0.min.js
+  │           └── modernizr-2.7.1.min.js
+  ├── crossdomain.xml
+  ├── favicon.ico
+  ├── feed.xml
+  ├── index.html  // 首页
+  ├── search.json  // post数据库
+  └── tag.html  // tag页面
 
 **本地运行**   
 注意在本地运行，将 `site.baseurl` 设置为空，`&` 为在后台运行，不中断终端使用，使用linux `jobs` 目录管理后台   
 
-```
-jekyll serve --baseurl '' --watch --port 4000 &   
-```
+  jekyll serve --baseurl '' --watch --port 4000 &   
 
 **http://0.0.0.0:4000/**   
 ![](http://Sidong.github.io/blog/assets/images/CMS/home.png)  
@@ -243,36 +222,32 @@ jekyll serve --baseurl '' --watch --port 4000 &
 **开启**   
 首先记得在 `_config.yml` 开启搜索功能   
 
-```
-search: true   
-```
+  search: true   
 
 **搜索设置**   
 在文件 `scripts.html` 进行搜索设置   
 
-```js
-window.JekyllSearch.init(
-{ 
-  // 搜索输入框元素
-  searchInput: document.querySelector(".search-field"),
-  // 数据库文件路径
-  jsonFile: '/search.json',
-  // 替换模板{xx}
-  template: "<li><article><a href='{url}'><i class='fa fa-share'></i> {title}<span class='entry-date'><time datetime='{date}'>{date}</time></span></a></article></li>",
-  // 搜索结果元素
-  searchResults: document.querySelector(".search-results"),
-  // 搜索结果标题
-  searchResultsHeader: "<h4>Search results</h4>",
-  // 搜索项目数量
-  limit: 12,
-  // 模糊匹配
-  fuzzy: true,
-  // 无搜索结果提示
-  noResults: "<p>Nothing matched your query</p>",
-  // 搜索要匹配项目，与search.json对应，这里只搜索标题和日期
-  matchItems: {'title':true,'category':false,'date':true}
-});
-```
+  window.JekyllSearch.init(
+  { 
+    // 搜索输入框元素
+    searchInput: document.querySelector(".search-field"),
+    // 数据库文件路径
+    jsonFile: '/search.json',
+    // 替换模板{xx}
+    template: "<li><article><a href='{url}'><i class='fa fa-share'></i> {title}<span class='entry-date'><time datetime='{date}'>{date}</time></span></a></article></li>",
+    // 搜索结果元素
+    searchResults: document.querySelector(".search-results"),
+    // 搜索结果标题
+    searchResultsHeader: "<h4>Search results</h4>",
+    // 搜索项目数量
+    limit: 12,
+    // 模糊匹配
+    fuzzy: true,
+    // 无搜索结果提示
+    noResults: "<p>Nothing matched your query</p>",
+    // 搜索要匹配项目，与search.json对应，这里只搜索标题和日期
+    matchItems: {'title':true,'category':false,'date':true}
+  });
 
 **模糊匹配**   
 
