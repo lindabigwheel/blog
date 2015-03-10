@@ -1,37 +1,33 @@
 # 代码高亮，需要安装rdiscount
 markdown: rdiscount
-pygments: true
+highlighter: true
 
-# https://github.com/sidong/Powerful-CMS/Permalinks
 # 文章结构 /分类/标题
 permalink:   /:categories/:title/
-url: http://Sidong.github.io/Powerful-CMS
+url: http://lindabigwheel.github.io/blog
 # 部署在Git上的repo名字
-baseurl: /Powerful-CMS
+baseurl: /blog
 # 名字
-author: Sidong
+author: Linda
 # 邮箱
-gmail: 'sidongh@gmail.com'
+gmail: 'gaoxing.gx@alibaba-inc.com'
 # 个人logo文件路径
 logo: /assets/images/logo.jpg
 # 站点开始时间
-date: 2014-01-01
+date: 2015-03-10
 
 # 个人信息，用于footer
 # contain:github, gmail, twitter, sina; lack:gplus
 contacts:
   - type: github
     icon: fa-github
-    url: 'https://github.com/Sidong'
+    url: 'https://github.com/lindabigwheel'
   - type: gmail
     icon: fa-pencil
-    url: 'mailto:sidongh@gmail.com'
-  - type: twitter
-    icon: fa-twitter
-    url: 'https://twitter.com/stone_style'
+    url: 'mailto:gaoxing.gx@alibaba-inc.com'
   - type: sina
     icon: fa-weibo
-    url: 'http://weibo.com/u/1879863147?s=6uyXnP'
+    url: 'http://weibo.com/7gaoxing'
 
 # 链接，用于导航菜单
 # 包含 about（关于）/articles（文章归档）/tags（标签分类）/feed（feed源）/search（搜索功能）
@@ -60,9 +56,9 @@ links:
 
 safe: false
 # Blog标题
-title: Sidong
+title: BigWheel
 # Blog描述
-description: Sidong's Powerful CMS
+description: Who is Linda, When to see Big Wheel
 
 # 开启搜索功能
 search: true
