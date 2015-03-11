@@ -343,7 +343,7 @@ body {
     color: #d14;
     background-color:#eee;
     border: 1px solid #e1e1e8;
-    padding: 2px 4px;
+    /*padding: 2px 4px;*/
     -webkit-border-radius: 0.7em;
     -moz-border-radius: 0.7em;
     border-radius: 0.7em;

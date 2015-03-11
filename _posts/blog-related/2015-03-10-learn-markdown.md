@@ -2,8 +2,9 @@
 layout: post
 title: "Markdown学习笔记"
 description: "Markdown学习笔记"
+category: blog-related
 tags: [markdown]
-date: 2015-03-11
+date: 2015-03-10
 ---
 
 * [Markdown项目主页](http://daringfireball.net/projects/markdown/) 
