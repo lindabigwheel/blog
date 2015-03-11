@@ -1,0 +1,181 @@
+---
+layout: post
+title: "Markdown学习笔记"
+description: "Markdown学习笔记"
+tags: [markdown]
+date: 2015-03-11
+---
+
+* [Markdown项目主页](http://daringfireball.net/projects/markdown/) 
+
+---
+
+## Markdown基础
+
+Markdown是一种轻型的标记语言，HTML标签语义的一种子集，更方便读写，也可以在markdown文件中直接书写html内容。通过一些工具，markdown文件转换成html文件进行发布展示。
+
+Markdown的语法由一些标点组成，`# = - * ~ > TAB SPACE`等。
+
+Markdown有一些很好的书写工具，比如[Mou](http://25.io/mou/)。
+
+## 语法
+* `标题`
+
+		This is an H1
+		=============
+
+		This is an H2
+		-------------
+
+		# This is an H1
+
+		## This is an H2
+
+		###### This is an H6
+
+		# This is an H1 #
+
+		## This is an H2 ##
+
+		### This is an H3 ###
+
+* `段落`
+
+		A paragraph is simply one or more consecutive lines of text, separated by one or more blank lines. (A blank line is any line that looks like a blank line — a line containing nothing but spaces or tabs is considered blank.) Normal paragraphs should not be indented with spaces or tabs.
+
+* `字体`
+
+	*斜体*
+
+		*single asterisks*
+
+		_single underscores_
+
+
+	**粗体**
+
+		**double asterisks**
+
+		__double underscores__
+
+* `图片`
+
+	图床：图片可储存在[Cloudapp](http://www.getcloudapp.com/)之上，生成url地址即可使用。
+
+		![Alt text](/path/to/img.jpg)
+
+		![Alt text](/path/to/img.jpg "Optional title")
+
+		![Alt text][id]
+		[id]: url/to/image  "Optional title attribute"
+
+* `链接`
+
+		This is [an example](http://example.com/ "Title") inline link.
+
+		[This link](http://example.net/) has no title attribute.
+
+		Relative link:  [About](/about/)    
+
+		This is [an example][id] reference-style link.
+		[id]: http://example.com/  "Optional Title Here"
+
+		The implicit link name shortcut allows you to omit the name of the link: 
+		This is [Google][] website.
+		[Google]: http://google.com/
+
+* `水平线`
+
+		You can produce a horizontal rule tag (<hr />) by placing three or more hyphens, asterisks, or underscores on a line by themselves. 
+
+		* * *
+
+		***
+
+		*****
+
+		- - -
+
+		---------------------------------------
+* `列表`
+
+		*   Red
+		*   Green
+		*   Blue
+
+		+   Red
+		+   Green
+		+   Blue
+
+		-   Red
+		-   Green
+		-   Blue
+
+		1.  Bird
+		2.  McHale
+		3.  Parish
+
+		To put a code block within a list item, the code block needs to be indented twice — 8 spaces or two tabs
+
+		To put a blockquote within a list item, the blockquote’s > delimiters need to be indented
+
+* `引用`
+
+		> This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+		> consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+		> Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+		> 
+		> Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+		> id sem consectetuer libero luctus adipiscing.
+
+		Blockquotes can be nested:
+
+		> This is the first level of quoting.
+		>
+		> > This is nested blockquote.
+		>
+		> Back to the first level.
+
+* `代码`
+
+		code block: indent every line of the block by at least 4 spaces or 1 tab:
+
+		This is a normal paragraph:
+
+			This is a code block.
+
+		code span: wrap code with backtick quotes (`):
+
+		Use the `printf()` function.
+
+* `表格`
+
+		| Tables        | Are           | Cool  |
+		| ------------- |:-------------:| -----:|
+		| col 3 is      | right-aligned | $1600 |
+		| col 2 is      | centered      |   $12 |
+		| zebra stripes | are neat      |    $1 |
+
+	结果为：
+
+	| Tables        | Are           | Cool  |
+	| ------------- |:-------------:| -----:|
+	| col 3 is      | right-aligned | $1600 |
+	| col 2 is      | centered      |   $12 |
+	| zebra stripes | are neat      |    $1 |
+
+* `转义`
+		Markdown provides backslash escapes for the following characters:
+
+		\   backslash
+		`   backtick
+		*   asterisk
+		_   underscore
+		{}  curly braces
+		[]  square brackets
+		()  parentheses
+		#   hash mark
+		+   plus sign
+		-   minus sign (hyphen)
+		.   dot
+		!   exclamation mark
