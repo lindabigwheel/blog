@@ -153,7 +153,7 @@ this.myExample = function () {};
 	
 	这个主要是个message-passing API， 用处主要是用户界面线程和后台服务线程之间信息交换，以防一些复杂的任务导致浏览器假死。
 	
-	缺陷主要是浏览器的支持不够广泛。seajs会优先使用此种方案，通过`importScripts`加载依赖。
+	缺陷主要是浏览器的支持不够广泛。seajs在非浏览器环境下通过`importScripts`加载依赖。
 
 
 3. document.write()
