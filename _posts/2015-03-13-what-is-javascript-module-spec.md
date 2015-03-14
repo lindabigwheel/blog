@@ -203,6 +203,7 @@ define(function(require, exports, module) {
 这样下载下来会立即执行`define函数`，基于`define`我们有机会掌控时机运行`business code`。这样一种模块定义方式，遵循CMD规范，由seajs进行实现。
 
 具体可以看下seajs中对`define(id?,deps?,factory)`的实现，简单描述其逻辑是：
+
 1. 依赖可以显式地声明在deps中，不然的话会自动解析
 	
 	如果在module code中有依赖，代码必定是包含`var dep1 = require('dep1')`之类的代码，所以可以根据factory函数的文本内容解析出相关依赖。
