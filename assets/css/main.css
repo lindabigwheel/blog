@@ -9,7 +9,7 @@
             box-sizing: border-box;
 }
 body {
-    width: 100%;font-size: 1em;
+    width: 100%;
     background: rgba(255,255,255,0.75);
 }
 
@@ -459,6 +459,11 @@ body {
     text-transform:uppercase
 }
 
+.excerpt{
+    font-size: 10px;
+    background-color: #eee;
+    padding:10px;
+}
 /* img preview */
 /*#main img {
     cursor: pointer;

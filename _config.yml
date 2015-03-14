@@ -1,6 +1,7 @@
 # 代码高亮，需要安装rdiscount
 markdown: rdiscount
-highlighter: true
+highlighter: pygments
+excerpt_separator: "<!--more-->"
 
 # 文章结构 /分类/标题
 permalink:   /:categories/:title/
@@ -71,3 +72,4 @@ comments: false
 
 # 时间显示
 showTime: true
+
