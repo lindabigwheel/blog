@@ -211,21 +211,22 @@ define(function(require, exports, module) {
 2. 生成模块实例，其中保存着模块元信息（meta），包括模块id，模块uri，模块的依赖deps，模块的业务逻辑代码factory等，并将实例放入缓存，实例状态为SAVED。
 
 	模块实例在整个过程中有多个状态：
-	  // 0 - START
-	  // 1 - The `module.uri` is being fetched
-	  FETCHING: 1,
-	  // 2 - The meta data has been saved to cachedMods
-	  SAVED: 2,
-	  // 3 - The `module.dependencies` are being loaded
-	  LOADING: 3,
-	  // 4 - The module are ready to execute
-	  LOADED: 4,
-	  // 5 - The module is being executed
-	  EXECUTING: 5,
-	  // 6 - The `module.exports` is available
-	  EXECUTED: 6,
-	  // 7 - 404
-	  ERROR: 7
+
+		// 0 - START
+		// 1 - The `module.uri` is being fetched
+		FETCHING: 1,
+		// 2 - The meta data has been saved to cachedMods
+		SAVED: 2,
+		// 3 - The `module.dependencies` are being loaded
+		LOADING: 3,
+		// 4 - The module are ready to execute
+		LOADED: 4,
+		// 5 - The module is being executed
+		EXECUTING: 5,
+		// 6 - The `module.exports` is available
+		EXECUTED: 6,
+		// 7 - 404
+		ERROR: 7
 
 除此之外并不做什么事。模块的定义部分到此完结了，看，本来在服务器端很简单平常的事情，在这里也费劲。
 
@@ -304,9 +305,13 @@ AMD，也是种模块化开发js的规范，由RequireJS实现。AMD和CMD共同
 4. 都是并行地发起js请求
 
 不同点是：
+
 1. 书写格式上
-	
-	书写格式AMD默认的是：
+
+与CMD明显的区别是，AMD显式地声明依赖，当然AMD也可以用CMD的方式书写，自动解析依赖，但可能会引入误解.
+[为什么我不推荐使用 AMD 的 Simplified CommonJS wrapping](https://www.imququ.com/post/amd-simplified-commonjs-wrapping.html)。
+
+书写格式AMD默认的是：
 
 {% highlight js %}
 define(
@@ -334,7 +339,6 @@ define(
 );
 {% endhighlight %}
 
-与CMD明显的区别是，AMD显式地声明依赖，当然AMD也可以用CMD的方式书写，自动解析依赖，但可能会引入误解.[为什么我不推荐使用 AMD 的 Simplified CommonJS wrapping](https://www.imququ.com/post/amd-simplified-commonjs-wrapping.html)。
 
 2. 依赖中业务逻辑代码执行的时间点上
 
